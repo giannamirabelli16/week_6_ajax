@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<title>Giphy Homework</title>
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<!-- 1. Create an array of strings. 
+2. Save the array of strings to a variable called topics.
+3. Create buttons from the topics inside the array. 
+4. Create a loop that appends a button for each string in the array. 
+5. When the user clicks on the button, it should grab 10 static, non-animated GIPHY APIs and place them on the page
+6. When the user clicks on the static images the images should animate
+7. Display the rating of each gif in a new div. -->
+
+<body>
+	<!-- Rendered buttons will get dumped Here -->
+	<div id="animalButtons"></div>
+
+	<form id="animal-form">
+		<label for="animal-input">Add an animal</label>
+		<input type="text" id="animal-input"><br>
+		
+		<!-- Button triggers new animal to be added -->
+		<input id="add-animal" type="submit" value="Add a New Animal">
+	</form>
+
+	<!-- Movies will get dumped here -->
+	<div id="animals"></div>
+
+	<!-- JQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="assets/javascript/giphy.js"></script>
+	
+
+</body>
+</html>
